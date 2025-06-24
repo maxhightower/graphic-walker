@@ -115,6 +115,7 @@
             "fields": "Fields",
             "columns": "X-Axis",
             "rows": "Y-Axis",
+            "z": "Z-Axis",
             "color": "Color",
             "opacity": "Opacity",
             "size": "Size",

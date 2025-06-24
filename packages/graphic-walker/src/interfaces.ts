@@ -285,6 +285,7 @@ export interface DraggableFieldState {
     measures: IViewField[];
     rows: IViewField[];
     columns: IViewField[];
+    z: IViewField[];
     color: IViewField[];
     opacity: IViewField[];
     size: IViewField[];

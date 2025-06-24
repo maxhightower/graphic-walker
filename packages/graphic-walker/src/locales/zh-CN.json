@@ -110,6 +110,7 @@
             "fields": "字段",
             "columns": "列",
             "rows": "行",
+            "z": "Z轴",
             "color": "颜色",
             "opacity": "透明度",
             "size": "大小",

@@ -23,7 +23,9 @@ const PosFields: React.FC = (props) => {
         if (geoms[0] === 'arc') {
             return DRAGGABLE_STATE_KEYS.filter((f) => f.id === 'radius' || f.id === 'theta') as IDraggableViewStateKey[];
         }
-        return DRAGGABLE_STATE_KEYS.filter((f) => f.id === 'columns' || f.id === 'rows') as IDraggableViewStateKey[];
+        return DRAGGABLE_STATE_KEYS.filter((f) =>
+            f.id === 'columns' || f.id === 'rows' || f.id === 'z'
+        ) as IDraggableViewStateKey[];
     }, [geoms[0], coordSystem]);
     return (
         <div>

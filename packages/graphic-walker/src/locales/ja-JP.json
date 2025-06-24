@@ -105,6 +105,7 @@
             "fields": "フィールド",
             "columns": "X軸",
             "rows": "Y軸",
+            "z": "Z軸",
             "color": "色",
             "opacity": "不透明度",
             "size": "大きさ",
