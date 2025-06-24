@@ -18,6 +18,7 @@ const CHANNEL_LIMIT = {
     color: 1,
     opacity: 1,
     size: 1,
+    z: 1,
     shape: 1,
     theta: 1,
     radius: 1,

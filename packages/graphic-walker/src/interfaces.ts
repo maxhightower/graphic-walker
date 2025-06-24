@@ -289,6 +289,7 @@ export interface DraggableFieldState {
     color: IViewField[];
     opacity: IViewField[];
     size: IViewField[];
+    z: IViewField[];
     shape: IViewField[];
     theta: IViewField[];
     radius: IViewField[];

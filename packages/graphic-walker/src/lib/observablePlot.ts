@@ -428,6 +428,7 @@ export function toObservablePlotSpec({
     color,
     opacity,
     size,
+    z,
     shape,
     theta,
     radius,
@@ -451,6 +452,7 @@ export function toObservablePlotSpec({
     color?: IViewField;
     opacity?: IViewField;
     size?: IViewField;
+    z?: IViewField;
     shape?: IViewField;
     theta?: IViewField;
     radius?: IViewField;
@@ -475,6 +477,7 @@ export function toObservablePlotSpec({
         color,
         opacity,
         size,
+        z,
         shape,
         theta,
         radius,
