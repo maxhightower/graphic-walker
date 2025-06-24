@@ -28,7 +28,7 @@ const CHANNEL_LIMIT = {
 
 const META_FIELD_KEYS: Array<keyof DraggableFieldState> = ['dimensions', 'measures'];
 
-const POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['x', 'y'];
+const POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['x', 'y', 'z'];
 
 const NON_POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['color', 'opacity', 'shape', 'size'];
 
