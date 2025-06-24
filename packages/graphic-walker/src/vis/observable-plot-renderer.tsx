@@ -57,6 +57,7 @@ export interface ObservablePlotProps {
     color?: IViewField;
     opacity?: IViewField;
     size?: IViewField;
+    z?: IViewField;
     shape?: IViewField;
     theta?: IViewField;
     radius?: IViewField;
@@ -147,6 +148,7 @@ const ObservablePlotRenderer = forwardRef<IReactPlotHandler, ObservablePlotProps
         color,
         opacity,
         size,
+        z,
         theta,
         radius,
         shape,
@@ -225,6 +227,7 @@ const ObservablePlotRenderer = forwardRef<IReactPlotHandler, ObservablePlotProps
             width: computedSize.w ?? 400,
             scales: channelScaleRaw,
             color,
+            z,
             details,
             opacity,
             radius,
