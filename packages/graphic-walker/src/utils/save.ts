@@ -57,6 +57,7 @@ export function initVisualConfig(): IVisualConfig {
         resolve: {
             x: false,
             y: false,
+            z: false,
             color: false,
             opacity: false,
             shape: false,
@@ -87,6 +88,7 @@ export const emptyVisualLayout: IVisualLayout = {
     resolve: {
         x: false,
         y: false,
+        z: false,
         color: false,
         opacity: false,
         shape: false,
