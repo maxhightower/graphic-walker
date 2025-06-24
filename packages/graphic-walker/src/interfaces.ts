@@ -379,6 +379,7 @@ export interface IVisualConfig {
     resolve: {
         x?: boolean;
         y?: boolean;
+        z?: boolean;
         color?: boolean;
         opacity?: boolean;
         shape?: boolean;
@@ -419,6 +420,7 @@ export interface IVisualLayout {
     resolve: {
         x?: boolean;
         y?: boolean;
+        z?: boolean;
         color?: boolean;
         opacity?: boolean;
         shape?: boolean;
