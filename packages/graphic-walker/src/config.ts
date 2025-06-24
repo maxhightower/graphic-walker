@@ -14,6 +14,7 @@ const CHART_LAYOUT_TYPE: ('auto' | 'fixed' | 'full')[] = ['auto', 'fixed', 'full
 const CHANNEL_LIMIT = {
     rows: Infinity,
     columns: Infinity,
+    z: Infinity,
     color: 1,
     opacity: 1,
     size: 1,
