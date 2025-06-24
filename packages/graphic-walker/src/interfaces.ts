@@ -289,6 +289,7 @@ export interface DraggableFieldState {
     color: IViewField[];
     opacity: IViewField[];
     size: IViewField[];
+    z: IViewField[];
     shape: IViewField[];
     theta: IViewField[];
     radius: IViewField[];
@@ -380,6 +381,7 @@ export interface IVisualConfig {
     resolve: {
         x?: boolean;
         y?: boolean;
+        z?: boolean;
         color?: boolean;
         opacity?: boolean;
         shape?: boolean;
@@ -400,6 +402,7 @@ export interface IVisualConfig {
 export interface IConfigScaleSet {
     row?: IConfigScale;
     column?: IConfigScale;
+    z?: IConfigScale;
     color?: IConfigScale;
     opacity?: IConfigScale;
     size?: IConfigScale;
@@ -420,6 +423,7 @@ export interface IVisualLayout {
     resolve: {
         x?: boolean;
         y?: boolean;
+        z?: boolean;
         color?: boolean;
         opacity?: boolean;
         shape?: boolean;
@@ -863,6 +867,7 @@ export type IFieldInfos = {
 export interface IChannelScales {
     row?: IScale | ((info: IFieldInfos) => IScale);
     column?: IScale | ((info: IFieldInfos) => IScale);
+    z?: IScale | ((info: IFieldInfos) => IScale);
     color?: IColorScale | ((info: IFieldInfos) => IColorScale);
     opacity?: IScale | ((info: IFieldInfos) => IScale);
     size?: IScale | ((info: IFieldInfos) => IScale);
