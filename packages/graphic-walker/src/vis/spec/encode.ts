@@ -6,6 +6,7 @@ export interface IEncodeProps {
     geomType: string;
     x: IViewField;
     y: IViewField;
+    z: IViewField;
     color: IViewField;
     opacity: IViewField;
     size: IViewField;
@@ -23,12 +24,12 @@ export interface IEncodeProps {
 }
 export function availableChannels(geomType: string): Set<string> {
     if (geomType === 'text') {
-        return new Set(['text', 'color', 'size', 'x', 'y', 'xOffset', 'yOffset', 'opacity']);
+        return new Set(['text', 'color', 'size', 'x', 'y', 'z', 'xOffset', 'yOffset', 'opacity']);
     }
     if (geomType === 'arc') {
         return new Set(['opacity', 'color', 'size', 'theta', 'radius']);
     }
-    return new Set(['column', 'opacity', 'color', 'row', 'size', 'x', 'y', 'xOffset', 'yOffset', 'shape']);
+    return new Set(['column', 'opacity', 'color', 'row', 'size', 'x', 'y', 'z', 'xOffset', 'yOffset', 'shape']);
 }
 function encodeTimeunit(unit: (typeof DATE_TIME_DRILL_LEVELS)[number]) {
     switch (unit) {
