@@ -14,9 +14,11 @@ const CHART_LAYOUT_TYPE: ('auto' | 'fixed' | 'full')[] = ['auto', 'fixed', 'full
 const CHANNEL_LIMIT = {
     rows: Infinity,
     columns: Infinity,
+    z: Infinity,
     color: 1,
     opacity: 1,
     size: 1,
+    z: 1,
     shape: 1,
     theta: 1,
     radius: 1,
@@ -26,7 +28,7 @@ const CHANNEL_LIMIT = {
 
 const META_FIELD_KEYS: Array<keyof DraggableFieldState> = ['dimensions', 'measures'];
 
-const POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['x', 'y'];
+const POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['x', 'y', 'z'];
 
 const NON_POSITION_CHANNEL_CONFIG_LIST: Array<keyof IVisualConfig['resolve']> = ['color', 'opacity', 'shape', 'size'];
 
