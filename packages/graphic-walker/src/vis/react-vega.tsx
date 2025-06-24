@@ -75,6 +75,7 @@ interface ReactVegaProps {
     color?: IViewField;
     opacity?: IViewField;
     size?: IViewField;
+    z?: IViewField;
     shape?: IViewField;
     theta?: IViewField;
     radius?: IViewField;
@@ -132,6 +133,7 @@ const ReactVega = forwardRef<IReactVegaHandler, ReactVegaProps>(function ReactVe
         color,
         opacity,
         size,
+        z,
         theta,
         radius,
         shape,
@@ -258,6 +260,7 @@ const ReactVega = forwardRef<IReactVegaHandler, ReactVegaProps>(function ReactVe
                 width: vegaWidth,
                 scales,
                 color,
+                z,
                 details,
                 opacity,
                 radius,
@@ -280,6 +283,7 @@ const ReactVega = forwardRef<IReactVegaHandler, ReactVegaProps>(function ReactVe
             stack,
             scales,
             color,
+            z,
             details,
             opacity,
             radius,
