@@ -26,6 +26,7 @@ export function getSingleView(props: SingleViewProps) {
     const {
         x,
         y,
+        z,
         color,
         opacity,
         size,
@@ -47,7 +48,7 @@ export function getSingleView(props: SingleViewProps) {
         dataSource,
         vegaConfig,
     } = props;
-    const fields: IViewField[] = [x, y, color, opacity, size, shape, row, column, xOffset, yOffset, theta, radius, text];
+    const fields: IViewField[] = [x, y, z, color, opacity, size, shape, row, column, xOffset, yOffset, theta, radius, text];
     let markType = geomType;
     let config: any = {};
     if (!hasLegend) {
@@ -108,6 +109,7 @@ export function getSingleView(props: SingleViewProps) {
         geomType: markType,
         x,
         y,
+        z,
         color,
         opacity,
         size,
