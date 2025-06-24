@@ -677,6 +677,7 @@ export function convertChart(data: IVisSpec): IChart {
         opacity: data.encodings.opacity?.slice() ?? [],
         size: data.encodings.size?.slice() ?? [],
         shape: data.encodings.shape?.slice() ?? [],
+        z: data.encodings.z?.slice() ?? [],
         theta: data.encodings.theta?.slice() ?? [],
         radius: data.encodings.radius?.slice() ?? [],
         longitude: data.encodings.longitude?.slice() ?? [],
